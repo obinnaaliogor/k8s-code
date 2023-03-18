@@ -26,7 +26,12 @@ node {
             app.push("${env.BUILD_NUMBER}")
         }
     }
+
     
+stage('8Deployment to Kubernetes'){
+sh 'kubectl apply -f deployment.yml'
+}
+
     stage('Trigger ManifestUpdate') {
                 echo "triggering updatemanifestjob"
                 build job: 'updatemanifest_pythonapp', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
