@@ -6,7 +6,7 @@ This repo along with https://github.com/BINXING-NIG-LTD/k8smanifest.git creates 
 ## Kubectl installation
 Jenkins is installed on EC2. Follow the instructions on https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/ . You can skip "Configure a Cloud" part for this demo. Please note some commands from this link might give errors, below are the workarounds:
 
-Alternatively, run the scripts provided on https://github.com/BINXING-NIG-LTD/jenkins_docker_kubectl_installations.git
+Alternatively, run the scripts provided on https://github.com/obinnaaliogor/jenkins_docker_kubectl_installations.git
 
 
 1. If you get daemonize error while running the command `sudo yum install jenkins java-1.8.0-openjdk-devel -y` then , run the commands from the answer of https://stackoverflow.com/questions/68806741/how-to-fix-yum-update-of-jenkins
