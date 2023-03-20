@@ -28,9 +28,10 @@ node {
     }
 
     
-stage('8Deployment to Kubernetes'){
+/* stage('8Deployment to Kubernetes'){
 sh 'kubectl apply -f deployment.yml'
 }
+*/
 
     stage('Trigger ManifestUpdate') {
                 echo "triggering updatemanifestjob"
